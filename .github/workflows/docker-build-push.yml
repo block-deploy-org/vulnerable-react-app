@@ -31,6 +31,7 @@ jobs:
         uses: docker/build-push-action@v7.3.0
         with:
           context: .
+          file: Dockerfile-java
           push: true
           tags: |
             ${{ env.JAVA_IMAGE_NAME }}:latest
@@ -40,6 +41,7 @@ jobs:
         uses: docker/build-push-action@v7.3.0
         with:
           context: .
+          file: Dockerfile-react
           push: true
           tags: |
             ${{ env.UI_IMAGE_NAME }}:latest
