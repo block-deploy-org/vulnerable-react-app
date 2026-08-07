@@ -47,5 +47,7 @@ jobs:
           push: true
           tags: |
             ${{ env.UI_IMAGE_NAME }}:latest
+            ${{ env.UI_IMAGE_NAME }}:v0.1.0
+            ${{ env.UI_IMAGE_NAME }}:v0.1.1
             ${{ env.UI_IMAGE_NAME }}:${{ github.sha }}
 
