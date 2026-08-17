@@ -36,6 +36,8 @@ jobs:
           push: true
           tags: |
             ${{ env.JAVA_IMAGE_NAME }}:latest
+            ${{ env.JAVA_IMAGE_NAME }}:v0.1.0
+            ${{ env.JAVA_IMAGE_NAME }}:v0.1.1
             ${{ env.JAVA_IMAGE_NAME }}:${{ github.sha }}
 
       - name: Build and push UI Docker image
